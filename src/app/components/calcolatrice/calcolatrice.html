@@ -1,9 +1,15 @@
-<div id="calcolatrice">
-  <div>
-    <app-display></app-display>
+
+<div id="calcolatrice" class="container mt-4 bg-dark p-3 rounded">
+  <div class="row mb-3">
+    <div class="col">
+      <!-- Aggiungi #displayRef qui -->
+      <app-display #displayRef></app-display>
+    </div>
   </div>
 
-  <div class="row row-cols-4">
-    <calcbutton *ngFor="let n of numeri" [val]="n"></calcbutton>
+  <div class="row row-cols-4 gx-2">
+    <div *ngFor="let n of numeri" class="col">
+      <calcbutton [val]="n" (buttonClicked)="gestisciInput($event)"></calcbutton>
+    </div>
   </div>
 </div>

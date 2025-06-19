@@ -1,9 +1,4 @@
 #calcolatrice {
-  width: 500px;
-  height: 500px;
-  background-color: lightgray;
-  border: 1px solid gray;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 20px;
+  max-width: 400px;
+  margin: auto;
 }
