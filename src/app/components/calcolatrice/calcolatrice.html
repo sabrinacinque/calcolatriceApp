@@ -1,0 +1,9 @@
+<div id="calcolatrice">
+  <div>
+    <app-display></app-display>
+  </div>
+
+  <div class="row row-cols-4">
+    <calcbutton *ngFor="let n of numeri" [val]="n"></calcbutton>
+  </div>
+</div>
